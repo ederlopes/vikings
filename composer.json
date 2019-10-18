@@ -1,0 +1,20 @@
+{
+  "name" : "desafio21/mvc",
+  "require": {
+    "php": ">=5.6",
+    "phpmailer/phpmailer": "^6.1",
+    "pecee/simple-router": "4.2.0.6"
+  },
+  "authors": [
+    {
+      "name": "Eder Campos Lopes",
+      "email": "eder.upnet@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "DESAFIO21\\":"vendor/DESAFIO21/",
+      "App\\":"App/"
+    }
+  }
+}
