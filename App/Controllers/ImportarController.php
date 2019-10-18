@@ -8,11 +8,22 @@
 
 namespace App\Controllers;
 
+use App\Models\Cartorio;
+use DESAFIO21\Controller\ViewName;
 
-class ImportarController
+class ImportarController extends ViewName
 {
+    private $objCartorio;
+
+    public function __construct()
+    {
+        $this->objCartorio = new Cartorio();
+    }
+
     public function index()
     {
-        require_once ("../App/Views/importar/index.phtml");
+        @$this->view->dados = $this->objCartorio->getAll();
+        $this->render("index");
     }
+
 }

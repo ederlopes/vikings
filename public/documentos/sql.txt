@@ -1,0 +1,19 @@
+select * from cartorios
+
+drop table cartorios;
+CREATE TABLE `cartorios` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `nome` varchar(255),
+  `razao` varchar(255),
+  `documento` varchar(60),
+  `cep` varchar(10),
+  `endereco` varchar(255),
+  `bairro` varchar(255),
+  `cidade` varchar(255),
+  `uf` varchar(2),
+  `telefone` varchar(255),
+  `email` varchar(60),
+  `tabeliao` varchar(255),
+  `ativo` varchar(10),
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM ;
